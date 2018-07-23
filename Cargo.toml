@@ -1,0 +1,6 @@
+[package]
+name = "systemd-mailjet"
+version = "0.1.0"
+authors = ["Jens Willemsens <jens@jensw.be>"]
+
+[dependencies]
