@@ -1,6 +1,8 @@
 use std::env;
 use std::process::Command;
 
+extern crate openssl_probe;
+
 #[macro_use]
 extern crate serde_derive;
 
@@ -32,6 +34,9 @@ struct Request {
 }
 
 fn main() {
+    // Set OpenSSL env
+    openssl_probe::init_ssl_cert_env_vars();
+
     // Constants
     const API_URL: &'static str = "https://api.mailjet.com/v3.1/send";
 
