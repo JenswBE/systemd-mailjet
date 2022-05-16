@@ -1,3 +1,5 @@
+# ⚠️ This project is no longer maintained and superseded by https://github.com/JenswBE/smtp-cli
+
 # Systemd-Mailjet
 
 Mailjet integration for systemd.
